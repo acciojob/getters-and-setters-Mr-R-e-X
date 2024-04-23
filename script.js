@@ -8,27 +8,29 @@ class Person {
     }
     setAge(newAge){
         this.age = newAge;
-        return this.age;
+        // return this.age;
     }
 }
 
 class Student extends Person {
     constructor(name, age, subject){
         super(name, age);
-        this.subject = subject;
+        // this.subject = subject;
     }
     study(){
-        return this.subject;
+        // return this.subject;
+		console.log(`${this.name} is studying`)
     }
 }
 
 class Teacher extends Person {
     constructor(name, age, subject){
         super(name, age);
-        this.subject = subject
+        // this.subject = subject
     }
     teach(){
-        return this.subject;
+        // return this.subject;
+		console.log(`${this.name} is teaching`)
     }
 }
 
